@@ -41,3 +41,7 @@ make -j $(($(nproc) + 1))
 
 # Install
 sudo make install
+
+# If you need to uninstall later, do
+# sudo make uninstall
+# then clean up the dead links in: /usr/local/lib
