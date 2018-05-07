@@ -8,9 +8,10 @@ sudo apt-get install --assume-yes libv4l-dev libtbb-dev libfaac-dev libmp3lame-d
 sudo apt-get install --assume-yes libvorbis-dev libxvidcore-dev v4l-utils vtk6
 sudo apt-get install --assume-yes liblapacke-dev libopenblas-dev libgdal-dev checkinstall
 
+# mkdir InstallOpenCV
+# cd InstallOpenCV
+
 # Download opencv and opencv_contrib
-mkdir InstallOpenCV
-cd InstallOpenCV
 # Master branch caused a lot of compatibility issues, so switched to 3.4.1
 # git clone https://github.com/opencv/opencv.git
 # git clone https://github.com/opencv/opencv_contrib.git
