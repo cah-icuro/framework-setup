@@ -11,11 +11,12 @@ sudo apt-get install --assume-yes liblapacke-dev libopenblas-dev libgdal-dev che
 # Download opencv and opencv_contrib
 mkdir InstallOpenCV
 cd InstallOpenCV
-# Master branch caused a lot of compatibility issues, so switched to 3.4
+# Master branch caused a lot of compatibility issues, so switched to 3.4.1
 # git clone https://github.com/opencv/opencv.git
 # git clone https://github.com/opencv/opencv_contrib.git
-git clone https://github.com/opencv/opencv/tree/3.4
-git clone https://github.com/opencv/opencv_contrib/tree/3.4
+OPENCV_VERSION='3.4.1'
+wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip
+wget https://github.com/opencv/opencv_contrib/archive/${OPENCV_VERSION}.zip
 
 # Set up build directory
 cd opencv
