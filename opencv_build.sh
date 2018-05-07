@@ -17,7 +17,14 @@ sudo apt-get install --assume-yes liblapacke-dev libopenblas-dev libgdal-dev che
 # git clone https://github.com/opencv/opencv_contrib.git
 OPENCV_VERSION='3.4.1'
 wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip
+unzip ${OPENCV_VERSION}.zip
+rm ${OPENCV_VERSION}.zip
+mv opencv-${OPENCV_VERSION} opencv
 wget https://github.com/opencv/opencv_contrib/archive/${OPENCV_VERSION}.zip
+unzip ${OPENCV_VERSION}.zip
+rm ${OPENCV_VERSION}.zip
+mv opencv_contrib-${OPENCV_VERSION} opencv_contrib
+
 
 # Set up build directory
 cd opencv
